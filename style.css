@@ -1,3 +1,19 @@
+/* =============================================================
+    FreshTuff Stylesheet
+    Sections:
+    1) Reset & Base
+    2) Header & Navigation
+    3) Hero (slider/video) & Content
+    4) Buttons
+    5) Sections (services, gallery, testimonials, about)
+    6) Forms
+    7) Footer
+    8) Package/Pages
+    9) Promo
+    10) Pricing Tiles
+    11) Responsive rules
+    12) Hero slider mobile switch
+    ============================================================= */
 /* Reset i podstawowe style */
 * {
     margin: 0;
@@ -28,7 +44,9 @@ body {
     padding-right: 0;
 }
 
-/* Header */
+/* =========================
+    2) Header & Navigation
+    ========================= */
 
 
 .logo h1 {
@@ -95,7 +113,9 @@ body {
     transition: all 0.3s;
 }
 
-/* Główna sekcja hero */
+/* =========================
+    3) Hero (slider/video)
+    ========================= */
 .hero {
     position: relative;
     overflow: hidden;
@@ -168,7 +188,9 @@ body {
 
 
 
-/* Przyciski */
+/* =========================
+    4) Buttons
+    ========================= */
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -215,7 +237,9 @@ body {
     transform: translateY(-2px);
 }
 
-/* Sekcje */
+/* =========================
+    5) Content Sections
+    ========================= */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -265,7 +289,7 @@ body {
     line-height: 1.6;
 }
 
-/* Galeria */
+/* ----- Gallery ----- */
 .gallery {
     padding: 6rem 0;
    
@@ -300,7 +324,7 @@ body {
     text-align: center;
 }
 
-/* Opinie */
+/* ----- Testimonials ----- */
 .testimonials {
     padding: 6rem 0;
     
@@ -341,7 +365,7 @@ body {
     font-weight: 600;
 }
 
-/* O nas */
+/* ----- About ----- */
 .about {
     padding: 6rem 0;
     
@@ -401,7 +425,9 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Formularz kontaktowy */
+/* =========================
+    6) Forms
+    ========================= */
 .contact-form {
     padding: 6rem 0;
    
@@ -467,7 +493,9 @@ body {
 main {
     flex: 1 0 auto;
 }
-/* Footer */
+/* =========================
+    7) Footer
+    ========================= */
 .footer {
      background-color: #cdb796;
     padding: 3rem 0 1rem;
@@ -517,7 +545,9 @@ main {
     color: #232323;
 }
 
-/* Strony pakietów */
+/* =========================
+    8) Packages & Page hero
+    ========================= */
 .page-hero {
     padding: 4rem 0 2rem;
     background: linear-gradient(135deg,  #111111 0%, #232323 100%);
@@ -774,7 +804,7 @@ main {
     line-height: 1.6;
 }
 
-/* Czyszczenie kostki - dodatkowe style */
+/* ----- Czyszczenie kostki (tiles) ----- */
 .surface-pricing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -799,7 +829,9 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Responsywność */
+/* =========================
+    11) Responsive rules
+    ========================= */
 @media (max-width: 1024px) {
    .hero .container {
     display: flex;
@@ -928,7 +960,9 @@ main {
 .packages {
     background-color: #111111; 
 }
-/* ...existing code... */
+/* =========================
+    Misc & nav variants
+    ========================= */
 
 /* Hamburger menu */
 .hamburger {
@@ -1152,9 +1186,9 @@ main {
 
 
 
-/* =======================
-   HERO - obrazkowy slider (zastępuje film)
-   ======================= */
+/* =========================
+    HERO - obrazkowy slider
+    ========================= */
 .hero {
     position: relative;
     height: 60vw;           /* dopasuj wysokość - zgodnie z poprzednim filmem */
@@ -1250,7 +1284,9 @@ main {
     }
 }
 
-/* ===== PROMO: 1 usługa - 10% taniej ===== */
+/* =========================
+    9) Promo banner
+    ========================= */
 .promo-section {
     background: linear-gradient(180deg, #1f1f1f 0%, #171717 100%);
     padding: 4rem 0;
@@ -1413,14 +1449,14 @@ main {
     box-sizing: border-box;
 }
 
-/* Nagłówek sekcji na środku */
+/* ----- Pricing header ----- */
 .pricing-section .section-title {
     text-align: center;
     color: #ffffff;
     margin-bottom: 1.25rem;
 }
 
-/* Pricing-tiles rozciągnięte na całą szerokość z wewnętrznym paddingiem */
+/* ----- Pricing tiles grid ----- */
 .pricing-tiles {
     width: 100%;
     margin: 0;
@@ -1432,7 +1468,7 @@ main {
     align-items: center;
 }
 
-/* Każdy kafelek ma maksymalną szerokość ale rozciąga się blisko krawędzi */
+/* ----- Pricing tile card ----- */
 .price-tile {
     width: 100%;
     max-width: 1100px;             /* zmień jeśli chcesz szersze */
@@ -1472,7 +1508,7 @@ main {
     cursor: default;
 }
 
-/* Małe ekrany: padding większy, maksymalna szerokość dopasowana */
+/* ----- Pricing: small screens ----- */
 @media (max-width: 720px) {
     .pricing-tiles { padding: 0 12px; }
     .price-tile { max-width: 100%; padding: 0.75rem 0.9rem; }
@@ -1482,7 +1518,9 @@ main {
 
 
 
-/* Ogólne poprawki dla urządzeń dotykowych */
+/* =========================
+    Touch & global mobile tweaks
+    ========================= */
 @media (max-width: 1024px) {
   body { -webkit-font-smoothing: antialiased; }
   .header .container, .header-inner { height: 64px; padding: 0 16px; }
@@ -1491,7 +1529,9 @@ main {
   .hero-logo { max-width: 340px; height: auto; }
 }
 
-/* Główne reguły mobilne (tablety/telefony) */
+/* =========================
+    Main mobile (<=768px)
+    ========================= */
 @media (max-width: 768px) {
   /* typografia i dotyk */
   html { font-size: 16px; }
@@ -1502,10 +1542,15 @@ main {
   .header-logo img { height: 40px; }
 
   /* hero */
-  .hero { height: 56vw; min-height: 180px; padding: 1rem 0; }
-  .hero-slider, .hero-slide img { width: 100%; height: 100%; object-fit: cover; }
-  .hero-logo { max-width: 220px; margin-bottom: .25rem; }
-  .hero-subtitle { font-size: .95rem; padding: 0 .75rem; }
+    /* zwiększamy wysokość slajdów na telefonach, aby były wyraźne */
+    .hero { height: 92vh; min-height: 92vh; padding: 0; }
+    .hero-slider, .hero-slide img { width: 100%; height: 100%; object-fit: cover; }
+    /* zmniejszamy logo nad sliderem, żeby nie zasłaniało zdjęć */
+    .hero-logo { max-width: 60vw; height: 22vh !important; margin-bottom: .25rem; }
+    .hero-content { padding-top: 40px; }
+    .hero-subtitle { font-size: .95rem; padding: 0 .75rem; }
+    /* lekko odsuwamy kolejną sekcję, żeby cały slider był widoczny */
+    .services { margin-top: 12px; }
 }
 
 
@@ -1515,7 +1560,9 @@ main {
 
 
 
-/* mobile variant: domyślnie ukryty, pokazujemy go tylko poniżej breakpointa */
+/* =========================
+    12) Hero slider mobile switch
+    ========================= */
 .hero-slider-mobile { display: none; }
 
 /* upewnij się, że .hero-slider i .hero-slide mają spójne reguły (jeśli już są w pliku to nic więcej nie trzeba) */
@@ -1562,7 +1609,7 @@ main {
     /* dopasowanie wysokości jeśli chcesz innego proporcjonowania dla telefonów */
     .hero-slider-mobile,
     .hero-slider-mobile .hero-slide,
-    .hero-slider-mobile img { height: 80vw; max-height: 90vh; }
+    .hero-slider-mobile img { height: 85vh; max-height: none; }
 }
 @media (min-width: 769px) {
     .hero-slider { display: block; }
