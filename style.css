@@ -149,16 +149,18 @@ body {
     line-height: 1.8;
 }
 .hero-content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    min-height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 100px; /* logo będzie niżej */
+    padding: 0 1rem;
 }
 .hero-bg-video {
     position: absolute;
@@ -1264,6 +1266,7 @@ main {
     background: transparent;
     padding: 6px;           /* lekki bezel */
     box-sizing: border-box;
+    margin: 0 auto;        /* wyśrodkowanie poziome */
 }
 
 .about-bg-video,
@@ -1418,9 +1421,11 @@ main {
     /* Kontener wideo ustawiony na środek */
     .about-video {
         width: 100%;
+        max-width: 100%;
         display: flex;
         justify-content: center;
-        margin: 0.75rem 0 0;
+        align-items: center;
+        margin: 0.75rem auto 0;
         box-sizing: border-box;
     }
 
@@ -1547,7 +1552,7 @@ main {
     .hero-slider, .hero-slide img { width: 100%; height: 100%; object-fit: cover; }
     /* zmniejszamy logo nad sliderem, żeby nie zasłaniało zdjęć */
     .hero-logo { max-width: 60vw; height: 22vh !important; margin-bottom: .25rem; }
-    .hero-content { padding-top: 40px; }
+    .hero-content { padding: 0 1rem; }
     .hero-subtitle { font-size: .95rem; padding: 0 .75rem; }
     /* lekko odsuwamy kolejną sekcję, żeby cały slider był widoczny */
     .services { margin-top: 12px; }
