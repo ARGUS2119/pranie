@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - FreshTuff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+		<div class="header-inner">
+			<a class="header-logo" href="index.html">
+				<img alt="FreshTuff" src="C:\Users\szymo\Desktop\Firma\LOGO\czrane logo.png" alt="FreshTuff logo" style="height:100px;" />
+			</a>
+			
+		</div>
+		
+	</header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Skontaktuj się z nami - odpowiadamy szybko i profesjonalnie</p>
+            </div>
+        </section>
+
+        <section class="contact-section" section-alt>
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Dane kontaktowe</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Telefon</h3>
+                                <p>+48 733 431 911</p>
+                                <small>Codziennie 8:00 - 20:00</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>fhu.bielas@gmail.com</p>
+                                <small>Odpowiadamy w ciągu 24h</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Obszar działania</h3>
+                                <p>Tychy i okolice</p>
+                                <p>Świadczymy usługi mobilne z dojazdem do klienta na terenie śląska
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3>Godziny pracy</h3>
+                                <p>Poniedziałek - Piątek: 15:00 - 20:00</p>
+                                <p>Sobota - Niedziela: 9:00 - 20:00</p>
+                                <small>Pracujemy 7 dni w tygodniu</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h2>Napisz do nas</h2>
+                        <form class="contact-form" action="sendmail.php" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <label for="firstName">Imię</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <label for="lastName">Nazwisko</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <label for="phone">Telefon</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            
+                           
+                            
+                            <div class="form-group">
+                                <input type="text" id="city" name="city" required>
+                                <label for="city">Miasto</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Wiadomość</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu odpowiedzi na zapytanie</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Najczęściej zadawane pytania</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Czy dojeżdżacie do klienta?</h3>
+                        <p>Tak, wszystkie nasze usługi świadczymy zarówno stacjonarnie, jak i mobilnie. Dojeżdżamy do klienta na terenie Tychów i najbliższych okolic zupełnie za darmo.
+Natomiast w przypadku lokalizacji oddalonych o więcej niż 20 minut od Tychów dojazd również jest możliwy i jego koszt ustalamy indywidualnie podczas kontaktu.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Czy dajecie gwarancję, że wszystkie plamy i zabrudzenia zejdą?</h3>
+                        <p>Niestety nie możemy dać gwarancji, że absolutnie każda plama zniknie.
+W praktyce w około 90% przypadków wszytskie zabrudzenia schodzą po profesjonalnym praniu, jednak zdarza się, że niektóre plamy są tak głęboko wchłonięte w strukturę tkaniny albo uszkodziły materiał, że nie da się ich już usunąć żadną metodą.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>A co jeśli nie będę zadowolony?</h3>
+                        <p>Na wszystkie nasze usługi udzielamy gwarancji satysfakcji. Jeśli z jakiegoś powodu nie będziesz w pełni zadowolony, nasz zespół w miarę możliwości od razu postara się to poprawić na miejscu — zawsze zależy nam, aby każdy klient był w 100% usatysfakcjonowany efektem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-section">
+					<h3>
+						<img src="C:\Users\szymo\Desktop\Firma\LOGO\czrane logo.png" alt="FreshTuff logo" style="height:120px;"/>
+					</h3>
+				</div>
+				<div class="footer-section">
+					<h4>Kontakt</h4>
+					<p>📞 +48 733 431 911</p>
+					<p>✉️ fhu.bielas@gmail.com</p>
+					<p>📍 Śląsk</p>
+				</div>
+				<div class="footer-section">
+					<h4>Usługi</h4>
+					<ul>
+						<li><a href="Car det.html">Car Detailing</a></li>
+						<li><a href="tapicerki.html">Pranie Tapicerek Meblowych</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>
+					<img src="C:\Users\szymo\Desktop\Firma\LOGO\czrane logo.png" alt="FreshTuff logo" style="height:40px;vertical-align:middle;"/>
+					© 2025. Wszystkie prawa zastrzeżone.
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>
